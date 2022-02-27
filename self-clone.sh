@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
 REPO=sambostock/self-cloning-repo
-URL="https://$REPO.git"
+URL="https://github.com/$REPO.git"
 
-tmpdir=$(mkdir -d)
+tmpdir=$(mktemp -d)
 
 # https://stackoverflow.com/a/13852329
 # `git clone` will only clone into an existing directory if it is empty
