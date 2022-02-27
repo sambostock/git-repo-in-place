@@ -11,6 +11,5 @@ tmpdir=$(mktemp -d)
 git clone --no-checkout --verbose --progress $URL $tmpdir
 mv $tmpdir/.git .
 rm -rf $tmpdir
+git reset
 
-# TODO: need to figure out what to checkout
-echo "figure out what to checkout now"
